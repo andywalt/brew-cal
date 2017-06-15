@@ -1,7 +1,29 @@
 <h1>Brew Calculator</h1>
-<h4>Hello, Let's Make Some Coffee!</h4>
+<h2>Hello, Let's Make Some Coffee!</h2>
+<h4>Chemex</h4>
+<div id="grams_calc">
+	<form name="grams_calc">
+		<label for="coffee">How much coffee do you want to make?</label><br/>
+		<input type="text" max="1500" name="coffee"/>grams.
+		<button onclick="calc();">Make Coffee!</button>
+		</br>
+		Use <input type="text" name="coffee_result"/> of beans.
+		</br>
+		<label for="beans">How many coffee beans do you want to use?</label><br/>
+		<input type="text" name="beans"/>grams.
+		<button onclick="calc();">Make Coffee!</button>
+		</br>
+	</form>
+
+
+</div>
+<br/>
+<br/>
+<br/>
+
 <div id="calc-contain">
 	<form name="calculator">
+		<label for="answer">Do the math!</label><br/>
 		<input type="text" name="answer" />
 		</br>
 
@@ -28,5 +50,6 @@
 		<input type="button" value=" / " onclick="calculator.answer.value += '/'" />
 		</br>
 	</form>
+
 
 </div>
