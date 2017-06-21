@@ -3,9 +3,29 @@
 <h4>Chemex</h4>
 <div id="grams_calc">
 	<form name="grams_calc">
-		<label for="coffee">How much coffee do you want to make?</label><br/>
-		<input type="text" max="1500" name="coffee"/>grams.
+		<label for="coffee">How much coffee (grams) do you want to make?</label><br/>
+		<input type="text" id="coffeeLiquidMake" placeholder="One cup = 300 grams." onChange="finalCoffee()" style="width: 250px">grams.
+		<br/>
+		<input type="button" value="Give Me Coffee!" onclick="calcBrew(document.getElementById('coffeeLiquidMake').value)">
+		</br>
+		Use <span id="coffeeBeanUse"> . . . </span>grams of coffee beans to make <span id="coffeeLiquidFinal"> . . . </span>.
+		<br/>
+	</form>
+</div>
+		<!-- <label for="beans">How many coffee beans do you want to use?</label><br/>
+		<input type="text" name="beans"/>grams.
 		<button onclick="calc();">Make Coffee!</button>
+		</br>
+	</form>
+</div>
+</br>
+</br>
+</br>
+<div id="grams_calc">
+	<form name="grams_calc">
+		<label for="coffee">How much coffee do you want to make?</label><br/>
+		<input type="text" name="coffee"/>grams.
+		<button onclick="calc;">Make Coffee!</button>
 		</br>
 		Use <input type="text" name="coffee_result"/> of beans.
 		</br>
@@ -14,12 +34,10 @@
 		<button onclick="calc();">Make Coffee!</button>
 		</br>
 	</form>
-
-
 </div>
 <br/>
 <br/>
-<br/>
+<br/> 
 
 <div id="calc-contain">
 	<form name="calculator">
@@ -53,3 +71,4 @@
 
 
 </div>
+-->
